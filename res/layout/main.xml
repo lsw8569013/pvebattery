@@ -109,7 +109,7 @@
             android:layout_marginTop="10dip"
             android:background="#aa123456"
             android:gravity="center"
-            android:text="作者：奋斗威威  \nhttp://t.qq.com/lsw8569013"
+            android:text="作者：奋斗威威  \nhttps://github.com/lsw8569013/pvebattery"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textColor="#FFFF00" />
 	<LinearLayout
