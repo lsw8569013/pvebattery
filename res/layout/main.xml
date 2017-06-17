@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/AdLinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="10"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_Start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="15dip"
+                android:layout_marginLeft="30dip"
+                android:layout_marginRight="30dip"
+                android:layout_marginTop="30dip"
+                android:background="#77000000"
+                android:text="设置开机启动"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_Start"
+                android:layout_below="@+id/tv_Start"
+                android:background="#77000000"
+                android:text="播放默认报警"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/setting"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="#77000000"
+                android:gravity="center"
+                android:text="点击查看设置选项及使用说明"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/start_Service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_Start"
+                android:layout_alignBottom="@+id/tv_Start"
+                android:layout_alignRight="@+id/setting"
+                android:layout_marginRight="20dip"
+                android:checked="true"
+                android:onClick="isAutoStart"
+                android:visibility="gone" />
+
+            <CheckBox
+                android:id="@+id/playMusic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView1"
+                android:layout_alignBottom="@+id/textView1"
+                android:layout_alignLeft="@+id/start_Service"
+                android:layout_marginRight="20dip"
+                android:checked="true"
+                android:onClick="isPlayDefineMusic"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView1"
+                android:layout_marginTop="10dip"
+                android:background="#77000000"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:text="报警声音的设置：选择默认报警，当电量充满的时候，会播放默认的报警声音，如果想要自己设置报警声音，需要在sd卡目录下的Battery文件夹下，放入想要报警的声音的。mp3的文件，把文件名改成bj.mp3。比如：如果原来的文件名是 abc 那么只需要改成bj即可。如果是abc.mp3，需要把文件名改成bj.MP3."
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="#aa123456"
+            android:gravity="center"
+            android:text="作者：奋斗威威  \nhttp://t.qq.com/lsw8569013"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFF00" />
+	<LinearLayout
+            android:id="@+id/miniAdLinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+	    <Button
+	            android:id="@+id/OffersButton"
+	            android:text="热门应用"
+	            android:layout_height="wrap_content"
+	            android:layout_width="fill_parent"
+	            android:visibility="visible"
+	            android:layout_weight="1" />
+	     <Button
+		    	android:id="@+id/gameOffersButton"
+		    	android:text="热门游戏"
+	            android:layout_height="wrap_content"
+	            android:layout_width="fill_parent"
+	            android:visibility="visible"
+	            android:layout_weight="1" />
+	    <Button
+	            android:id="@+id/moreAppsButton"
+	            android:text="作者作品"
+	            android:layout_height="wrap_content"
+	            android:layout_width="fill_parent"
+	            android:visibility="visible"
+	            android:layout_weight="1" />
+	     
+	</LinearLayout>
+    </LinearLayout>
+</ScrollView>

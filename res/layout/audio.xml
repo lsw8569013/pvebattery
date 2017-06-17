@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:padding="5dp" >
+	
+     <LinearLayout
+            android:id="@+id/AdLinearLayout_au"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <SeekBar
+            android:id="@+id/audioSB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/ppIB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_media_play" />
+    </LinearLayout>
+	
+    <LinearLayout
+            android:id="@+id/miniAdLinearLayout_au"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+	    <Button
+	            android:id="@+id/Offers"
+	            android:text="热门应用"
+	            android:layout_height="wrap_content"
+	            android:layout_width="fill_parent"
+	            android:visibility="visible"
+	            android:layout_weight="1" />
+	     <Button
+		    	android:id="@+id/gameOffers"
+		    	android:text="热门游戏"
+	            android:layout_height="wrap_content"
+	            android:layout_width="fill_parent"
+	            android:visibility="visible"
+	            android:layout_weight="1" />
+	    <Button
+	            android:id="@+id/feedback"
+	            android:text="应用反馈"
+	            android:layout_height="wrap_content"
+	            android:layout_width="fill_parent"
+	            android:visibility="visible"
+	            android:layout_weight="1" />
+	     
+	</LinearLayout>
+    
+    
+</LinearLayout>
